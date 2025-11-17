@@ -1,0 +1,171 @@
+.School_Projects{
+    display: flex;
+    flex-direction: column;
+    margin-block: clamp(2rem, 5vw, 4rem);
+    gap: clamp(1.5rem, 3vw, 3rem);
+}
+.title_description{
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: center;
+}
+.title{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+.description{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: rgba(240, 248, 255, 0.65);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+.Projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(1rem, 3vw, 2.5rem);
+}
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(32, 32, 32, 0.65);
+    border-radius: 26px;
+    padding: 1.25rem;
+    gap: 0.75rem;
+    border: 1px solid rgba(93, 214, 44, 0.08);
+    min-height: 100%;
+}
+.projectImage{
+    display: flex;
+    border-radius: 18px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background: rgba(255, 255, 255, 0.05);
+}
+.projectImage img,
+.projectImage video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projectTitle{
+    color: #F8F8F8;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.projectDescription_techused{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.projectDescription{
+    color: rgba(248, 248, 248, 0.75);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.projectTechused{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.projectTechused img{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+.projectExplore{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.35rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease;
+}
+.projectExplore img{
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.projectExplore:hover{
+    transform: translateX(-4px);
+}
+.projectExplore:hover img{
+    transform: rotate(45deg);
+}
+.Personal_Projects{
+    display: flex;
+    flex-direction: column;
+}
+.Projects_personal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.P_title{
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+.P_video{
+    width: min(640px, 100%);
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+.P_video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.P_descriptionTechUsed{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: rgba(32, 32, 32, 0.65);
+    padding: 1.25rem;
+    border-radius: 24px;
+    width: min(660px, 100%);
+    border: 1px solid rgba(93, 214, 44, 0.08);
+}
+.P_description{
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(248, 248, 248, 0.7);
+}
+.P_TechUsed{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: end;
+    gap: 0.75rem;
+}
+.P_TechUsed img{
+    width: 42px;
+    height: 42px;
+}
+
+@media (max-width: 768px) {
+    .projectCard{
+        padding: 1rem;
+    }
+
+    .projectDescription{
+        font-size: 0.95rem;
+    }
+
+    .P_descriptionTechUsed{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,88 @@
+.personal_box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(2rem, 4vw, 4.5rem);
+    min-height: auto;
+}
+.Info_box{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 380px;
+    padding: clamp(0.5rem, 3vw, 2.5rem) clamp(0.5rem, 3vw, 2rem);
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+.Peronal_info{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+.Title{
+    color: #5DD62C;
+    font-weight: 700;
+    font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+    letter-spacing: 0.08em;
+}
+.greeting{
+    color: #f8f8f8;
+    font-size: clamp(2.1rem, 4vw, 3rem);
+    font-weight: 700;
+}
+.description{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+.Tech_info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.Tech_Title{
+    display: flex;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+}
+.Tech_Icon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.Tech_Icon img{
+    width: clamp(26px, 4vw, 46px);
+    height: clamp(26px, 4vw, 46px);
+    object-fit: contain;
+    filter: grayscale(0.3);
+    opacity: 0.8;
+}
+.My_Image{
+    display: flex;
+    flex: 0.5 0.5 280px;
+    justify-content: center;
+    padding-bottom: clamp(1rem, 5vw, 3rem);
+}
+.My_Image img{
+    width: min(340px, 100%);
+    height: auto;
+    object-fit: contain;
+    border-radius: 24px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
+}
+
+@media (max-width: 768px) {
+    .Info_box{
+        padding-inline: 0;
+    }
+
+    .greeting,
+    .Peronal_info,
+    .Tech_info{
+        text-align: center;
+        align-items: center;
+    }
+
+    .Tech_Title{
+        justify-content: center;
+    }
+}
