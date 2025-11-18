@@ -11,7 +11,7 @@ export default function NavBar(){
                     <li> <a href="#Contact"> Contact </a> </li>
                 </ul>
             </div>
-            <a href="/Mohamed_Elalj_CV.pdf" target="_blank" rel="noopener noreferrer" className={styles.myresume}>
+            <a href="/Elalj_Mohamed_CV.pdf" target="_blank" rel="noopener noreferrer" className={styles.myresume}>
                 <div className={styles.resume}>My Resume</div>
                 <div className={styles.resume_box}> <img className={styles.arrow} src="/arrow.svg" alt="arrow" height={"20px"} width={"20px"}/></div>
             </a>

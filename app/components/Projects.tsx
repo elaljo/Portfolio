@@ -38,7 +38,7 @@ export default function Projects(){
                    <ProjectCard 
                     title='Inception'
                     description=' Design and implementation of a secure multi-service system using Docker for Nginx, WordPress, and MariaDB, orchestrated with Docker Compose. Service isolation, resource optimization, and secure communication setup. Implementation of DevOps practices to facilitate deployment, maintenance, and scaling of the system.'
-                    image={'/Projects_photos/Docker.png'}
+                    image={'/Projects_photos/Docker.jpg'}
                     techUsed={['/Tech_Icons/Docker.svg', '/Tech_Icons/wordpress.svg', '/Tech_Icons/mariaDB.svg', '/Tech_Icons/nginx.svg']}
                     Githublink='https://github.com/elaljo/Inception/tree/main'
                 />
@@ -50,7 +50,7 @@ export default function Projects(){
                     <ProjectPersonalCard
                         title='F1HUB AI'
                         description='Development of a dynamic Formula 1 news web application using Next.js and TypeScript. The project involved integrating live news APIs, implementing team-specific news filtering with dynamic theming, and adding an interactive ChatGPT-powered assistant for article insights and related content. Focused on responsive design, user engagement, and seamless data interaction while following best practices for modern web development.'
-                        video='/F1 Video.mp4'
+                        video='/Projects_photos/F1 Video.mp4'
                         techUsed={['/Tech_Icons/TypeScript.svg', '/Tech_Icons/React.svg', '/Tech_Icons/CSS3.svg', '/Tech_Icons/Next.js.svg']}
                     />
                 </div>
