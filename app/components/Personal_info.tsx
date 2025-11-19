@@ -5,9 +5,9 @@ export default function PersonalInfo(){
         <div className={styles.personal_box} id="about">
             <div className={styles.Info_box}>
                 <div className={styles.Peronal_info}>
-                    <div className={styles.Title}> SOFTWARE ENGINEER AT 1337 CODING SCHOOL </div>
+                    <div className={styles.Title}> SOFTWARE ENGINEER </div>
                     <div className={styles.greeting}> Hey, I'm Elalj Mohamed! </div>
-                    <div className={styles.description}>I’m a 22-year-old frontend developer and designer from Morocco. I specialize in building web applications and integrating AI to make them more interactive and user-friendly. My goal is to improve my skills in frontend development and design, one day at a time.</div>
+                    <div className={styles.description}>I’m a 22-year-old frontend developer and designer from Morocco. I focus on building clean, responsive web applications and integrating AI to make interfaces smarter and more engaging. I’m always exploring new technologies and pushing my craft forward to bring ideas to life through thoughtful design and code.</div>
                 </div>
                 <div className={styles.Tech_info}>
                     <div className={styles.Tech_Title}>TECHNOLOGIES I'VE WORKED WITH</div>
